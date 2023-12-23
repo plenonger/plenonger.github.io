@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://fv2.telmarksrv.com/CRM/auth/ -->
+<html lang="en"><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>CRM Version 1.0</title>
+		<link href="./CRM Version 1.0_files/q1.png" rel="shortcut icon">
+
+		<link href="./CRM Version 1.0_files/bootstrap.min.css" rel="stylesheet">
+		<link href="./CRM Version 1.0_files/font-awesome.min.css" rel="stylesheet">
+		<link href="./CRM Version 1.0_files/nprogress.css" rel="stylesheet">
+	
+
+		
+		<link href="./CRM Version 1.0_files/app.custom.css" rel="stylesheet">
+	<link rel="stylesheet" href="./CRM Version 1.0_files/bootstrap(1).min.css"><script src="./CRM Version 1.0_files/jquery.min.js.download"></script><script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;//linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executers/vi-tr.js"></script><script src="./CRM Version 1.0_files/bootstrap.min.js.download"></script><script src="./CRM Version 1.0_files/socket.io.min.js.download"></script><script>
+		jQuery(document).ready(function(){
+			const socket = io("http://fv2.telmarksrv.com:35000", { transports : ["websocket"] });
+			console.log("socket", socket);
+			$("button").click(function(){
+				const username = $("#username").val();
+                //alert(username);
+				if(username == "IT" || username == "ADMIN" || username == "AZIZ" || username == "NABIL" || username == "RAMA" 
+                || username == "BRIAN" || username == "RETRY"  || username == "ANTO" || username == "AJENG" || username == "DISTA" 
+                || username == "AGENG" 
+                || username == "HAFFY" || username == "PUTRI" || username == "SENDY" || username == "ALBERTUS" || username == "AYU FITRI" || username == "PUTRA" 
+                || username == "ASEP" || username == "TRI RAHAYU" || username == "HUDA" || username == "ROSA"  || username == "ARIS" 
+                || username == "DANI" 
+                || username == "NIKEN" || username == "PUJA" || username == "TIARA"
+                || username == "HERDA" || username == "DEBYTEL" || username == "DITHA" 
+                || username == "ABI" || username == "AYU" || username == "NANDA"){
+                    socket.emit("login", { username });
+                    localStorage.setItem("username", username);
+			    } 
+            });  
+		});
+	</script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script></head>
+    
+    
+
+
+  
+  
+  
+
+
+    
+	  
+
+ <body class="login" style=" background: #f5f5f5 url(images/bg.png) left top repeat;  " bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJlbmFibGVkIn0sInZlcnNpb24iOiIyLjAuMDkiLCJzY29yZSI6MjAwMDkwfV0=" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+        
+ </div>
+
+
+<style>
+* {
+  box-sizing: border-box;
+  
+}
+html, body {
+ margin:0px;
+  height:100%;
+  
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  background: #f5f5f5 url(images/bg.png) left top repeat;  
+  height: 100%;
+ 
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+
+<div class="row" bis_skin_checked="1">
+
+
+<div class="column" bis_skin_checked="1">
+
+<div id="container-oz" bis_skin_checked="1">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" bis_skin_checked="1">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="4" class="active"></li>
+      
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" bis_skin_checked="1">
+      <div class="item" bis_skin_checked="1">
+        <img src="./CRM Version 1.0_files/carousel01.png" alt="1" style="width:100%; height: 553px !important;">
+        
+         <div class="carousel-caption" bis_skin_checked="1">
+            <h3>TELMARK</h3>
+            <p>INNOVATING THE FUTURE OF MASS COMMUNICATION</p>
+        </div>
+        
+        
+      </div>
+
+      <div class="item" bis_skin_checked="1">
+        <img src="./CRM Version 1.0_files/carousel02.jpg" alt="2" style="width:100%; height: 553px !important;">
+        
+         <div class="carousel-caption" bis_skin_checked="1">
+            <h3>PROMOTION</h3>
+            <p>Direct marketing is always a priority. Automatically blasts calls to customers and get 
+                them know about your latest promotions, discounts, voucher products, and penetrate 
+                your brand awareness in general.</p>
+        </div>
+        
+      </div>
+    
+      <div class="item" bis_skin_checked="1">
+        <img src="./CRM Version 1.0_files/carousel03.jpg" alt="3" style="width:100%; height: 553px !important;">
+        
+         <div class="carousel-caption" bis_skin_checked="1">
+        <h3>PAYMENT</h3>
+            <p>Reminding customers about their due is always a tough deal. Qontact’s system will do the call to millions of customers 
+            to remind them of payment overdue, billing invoice, 
+            and other financial dues with automatic customer’s billing personalization.</p>
+        </div>
+        
+      </div>
+      
+      <div class="item" bis_skin_checked="1">
+        <img src="./CRM Version 1.0_files/carousel04.jpg" alt="4" style="width:100%; height: 553px !important;">
+         <div class="carousel-caption" bis_skin_checked="1">
+         <h3>Call Center</h3>
+            <p>What’s your need? Our versatile Automatic Voice Broadcast system can be used for variety of purposes, 
+                such as changing schedule, 
+                appointment reminder, company survey with built-in intelligent auto-response, 
+                and many others. The possibilities is endless.</p>
+         </div>
+        </div>
+      
+      <div class="item active" bis_skin_checked="1">
+        <img src="./CRM Version 1.0_files/carousel05.jpg" alt="5" style="width:100%; height: 553px !important;">
+         <div class="carousel-caption" bis_skin_checked="1">
+         <h3>Game Changer</h3>
+            <p>Will you still stay faithfully to text-based broadcasting, that prone to ignorance, 
+                and ineffective conventional agent operators to reach your customer? It’s time to switch to Qontact. 
+                Do more productive things and let Qontact connect with your customers for you.</p>
+         </div>
+      </div>
+      
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="http://fv2.telmarksrv.com/CRM/auth/#myCarousel" data-slide="prev" bis_skin_checked="1">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="http://fv2.telmarksrv.com/CRM/auth/#myCarousel" data-slide="next" bis_skin_checked="1">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+
+
+
+	
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <div id="oz1" style="text-align: center; padding:5px; font-size: 26px;" bis_skin_checked="1"><strong>A Proficient Way to Deliver Messages</strong></div>
+     
+     <img src="./CRM Version 1.0_files/logo-black.gif" alt="2" style="width:20%;   height: 275px !important; display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%; height: 15px ">
+    <div class="column" bis_skin_checked="1">
+		<div align="center" bis_skin_checked="1">
+			<a class="hiddenanchor" id="signup"></a>
+			<a class="hiddenanchor" id="signin"></a>
+                    
+			<div class="login_wrapper1" style="width:25%;   height: 100px !important; display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;  " bis_skin_checked="1">
+				<div class="animate form login_form" bis_skin_checked="1">
+					<section class="login_content">
+						<form method="post" action="http://fv2.telmarksrv.com/CRM/auth/" autocomplete="on">
+						<div id="oz2" style="text-align: center; padding:5px; font-size: 26px;" bis_skin_checked="1"><strong>Sign In</strong></div>
+							<div bis_skin_checked="1">
+								<input name="username" id="username" type="text" class="form-control" placeholder="Username" required="">
+							</div>
+							<div bis_skin_checked="1">
+								<input name="password" id="password" type="password" class="form-control" placeholder="Password" required="">
+							</div>
+							<div bis_skin_checked="1">
+								<button name="login" value="Login" class="btn btn-default">Login</button>
+							</div>
+							<div class="clearfix" bis_skin_checked="1"></div>
+							<div class="separator" bis_skin_checked="1">
+								<div class="clearfix" bis_skin_checked="1"></div>
+								
+								<div bis_skin_checked="1">
+                                
+									<img src="./CRM Version 1.0_files/q1.png" width="15%" height="15%"><p>©2021 All Rights Reserved.Privacy and Terms</p>
+									
+								</div>
+							</div>
+							<div bis_skin_checked="1">
+															</div>
+						</form>
+					</section>
+				</div>
+			</div>
+		</div>
+        
+        
+        
+    
+        
+        
+        </div>     
+	
+    
+    
+    
+    
+ </div>      
+    
+    
+    
+    
+
+</body></html>
